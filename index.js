@@ -1,6 +1,6 @@
 "use strict";
 
-var options = require("../../lib/configs/swagger-ui-options");
+var swagger_ui_options = require("../../lib/configs/swagger-ui-options");
 var express = require("express");
 var swaggerUi = require("swagger-ui-dist");
 var favIconHtml =
@@ -103,7 +103,7 @@ window.onload = function() {
   } else {
     url = window.location.origin;
   }
-  const options = ${JSON.stringify(options.default)}
+  const options = ${JSON.stringify(swagger_ui_options.default)}
   url = options.swaggerUrl || url
   var urls = options.swaggerUrls
   var customOptions = options.customOptions
