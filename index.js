@@ -103,7 +103,7 @@ window.onload = function() {
   } else {
     url = window.location.origin;
   }
-  const options = ${JSON.stringify(lazywaitswaggeroptions.default)}
+  const options = ${JSON.stringify(options.default)}
   url = options.swaggerUrl || url
   var urls = options.swaggerUrls
   var customOptions = options.customOptions
